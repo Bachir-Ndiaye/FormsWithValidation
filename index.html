@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Challenge Formulaire</title>
+</head>
+<body>
+    <div class="form-container">
+
+        <form action="./thanks.php" method="POST">
+            <p> 
+                <label for="firstname">Nom :</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Entrer votre nom de famille" required>
+            </p>
+            
+            <p> 
+                <label for="lastname">Prénom :</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Entrer votre prénom" required>
+            </p>
+    
+            <p>
+                <label  for="email">E-mail :</label>
+                <input  type="email"  id="email"  name="email" placeholder="Entrer votre adresse e-mail" required>
+            </p>
+
+            <p>
+                <label  for="phone">Téléphone :</label>
+                <input  type="phone"  id="phone"  name="phone" placeholder="Entrer votre numéro de téléphone" required>
+            </p>
+            
+            <p>
+                <label for="subject">Sujet :</label>
+                    <select name="subject" id="subject">
+                        <option value="">--Choississez un sujet--</option>
+                        <option value="php-subject">PHP</option>
+                        <option value="js-subject">JavaScript</option>
+                        <option value="c-subject">C</option>
+                        <option value="java-subject">Java</option>
+                        <option value="css-subject">CSS</option>
+                        <option value="html-subject">HTML</option>
+                    </select>
+            </p>
+
+            <p>
+                <label for="msg">Votre message : </label>
+                <textarea id="msg" name="msg" placeholder="Veuillez entrer votre message" required></textarea>
+            </p>
+    
+            
+            <button type="submit">Envoyer</button>
+        
+        </form>
+
+    </div>
+</body>
+</html>
